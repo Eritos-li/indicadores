@@ -1,0 +1,13 @@
+
+<form [formGroup]='form' (ngSubmit)="search()">
+
+  <span class="p-float-label">
+    <input id="float-input" type="number" min="1990" max={{year}} formControlName="year" pInputText>  
+    <label for="float-input">Fecha</label>
+  </span>
+
+  <button pButton pRipple type="submit" label="Buscar"></button>
+
+</form>
+
+<app-tabla [tabla]="tabla"></app-tabla>
